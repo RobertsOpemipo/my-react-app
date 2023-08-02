@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import CarList from './components/CarList';
+import './index.css'
 
 function App() {
   return (
 
       <div>
         <CarList />
-        <h1 className='text-9xl text-cyan-600'>Hello</h1>
+        {/* <h1 className='text-9xl text-cyan-600'>Hello</h1> */}
       </div>
     // <div className="App">
     //   <header className="App-header">

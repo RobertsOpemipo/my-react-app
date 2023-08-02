@@ -3,17 +3,21 @@ import React from "react";
 class Car extends React.Component {
     render() {
         return (
-            <div>
+            <div className="mx-auto">
+                {/* {console.log(this.props)} */}
                 <div>
-                    <img src="https://cdn.pixabay.com/photo/2016/12/03/18/57/car-1880381_1280.jpg" 
-                    alt="Mercedes" width="300px" />
+                    <img 
+                        src={this.props.imageUrl} 
+                        alt="Mercedes" 
+                        class="rounded-xl shadow-xl" 
+                        width="300px" />
                 </div>
 
                 <div>
                     <div>
-                        <h1>Audi</h1>
+                        <h1 className="text-4xl font-bold text-gray-700 pt-4">{this.props.name}</h1>
 
-                        <p>Luxury Vehicles</p>
+                        <p className="text-s text-gray-400 pt-4">{this.props.productType}</p>
                     </div>
                 </div>
 
